@@ -15,3 +15,11 @@ code {
 .logo-header {
   width: 10%;
 }
+/* ShoppingList */
+i{
+  cursor: pointer;
+}
+.outOfStock {
+  opacity: 0.2;
+  cursor: default;
+}
