@@ -5,6 +5,7 @@ import GroceriesList from './GroceriesList';
 import ShoppingCart from './ShoppingCart';
 import groceriesData from './GroceriesData';
 import DisplayTotals from "./DisplayTotals";
+import Receipt from "./Receipt";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -103,6 +104,12 @@ function App() {
           <div><ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} /></div>
           <div><DisplayTotals cartItems={cartItems} handleOrder={handleOrder}/></div>
         </div>
+
+        )}
+        {showReceipt && (
+          <div>
+            <Receipt cartItems={cartItems} />
+          </div>
 
         )}
       </div>
