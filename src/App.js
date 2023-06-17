@@ -113,6 +113,14 @@ function App() {
 
         )}
       </div>
+      <footer className="d-flex flex-column justify-content-center align-items-center">
+  <div className="d-flex align-items-center">
+    <span className="mr-2">KWIK-E-MART</span>
+    <a href="https://www.instagram.com" className="text-dark">
+      <i className="fab fa-instagram"></i>
+    </a>
+  </div>
+</footer>
     </div>
   );
 }
